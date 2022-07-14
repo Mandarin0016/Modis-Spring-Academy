@@ -15,5 +15,8 @@ public class Main {
         String a = "tensada";
         String b = "friabili";
         System.out.println(a.equals(b));
+        System.out.println(a.equals(b));
+        System.out.println(a.equals(b));
+        System.out.println(a.equals(b));
     }
 }
