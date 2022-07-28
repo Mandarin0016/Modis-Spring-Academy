@@ -35,8 +35,8 @@ public class Main {
             String[] currentLine = line.split("\\W+");
             Arrays.stream(currentLine)
                     .map(String::toLowerCase) //map every word to lower case
-                    .filter(word -> word.length() > 1). //skip all the words with length less than 2
-                    filter(word -> !STOP_WORDS.contains(word)) //skip all the STOP_WORDS
+                    .filter(word -> word.length() > 1) //skip all the words with length less than 2
+                    .filter(word -> !STOP_WORDS.contains(word)) //skip all the STOP_WORDS
                     .forEach(word -> words.put(word, words.getOrDefault(word, 0) + 1)); //fill the map with all the valid words
         });
     }
@@ -45,7 +45,7 @@ public class Main {
         return words.entrySet().stream()
                 .sorted(Collections.reverseOrder(Map.Entry.comparingByValue())) // sort the STREAM
                 .limit(topLimit) // put a limit
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (x, y) -> y, LinkedHashMap::new)); // collect the STREAM int Map
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (x, y) -> y, LinkedHashMap::new)); // collect the STREAM into Map
     }
 
 }
