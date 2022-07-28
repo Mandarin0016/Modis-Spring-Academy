@@ -1,7 +1,7 @@
 package wordCounting;
 
-
 import java.io.*;
+import java.net.URL;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,12 +14,15 @@ public class Main {
     private static final Map<String, Integer> words = new HashMap<>();
 
     public static void main(String[] args) throws IOException {
-        initiateScanner("C:\\Modis_Java_Academy\\Homeworks\\SecondTopic\\src\\wordCounting\\wiki_java.txt");
-        initiateWriter("C:\\Modis_Java_Academy\\Homeworks\\SecondTopic\\src\\wordCounting\\result.txt");
+        initiateScanner(new Scanner(System.in).nextLine());
+        initiateWriter();
 
         replaceSeparatorSymbols();
 
+        initiateScanner("result.txt");
+
         countWords();
+
         printMostFrequentWords();
     }
 
@@ -27,9 +30,8 @@ public class Main {
         words.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByValue())).limit(20).forEach(entry -> System.out.println(entry.getKey() + " -> " + entry.getValue()));
     }
 
-    private static void countWords() throws FileNotFoundException {
-        initiateScanner("C:\\Modis_Java_Academy\\Homeworks\\SecondTopic\\src\\wordCounting\\result.txt");
-        while (scanner.hasNextLine()){
+    private static void countWords() {
+        while (scanner.hasNextLine()) {
             String[] currentRowWords = scanner.nextLine().split("\\s+");
 
             Arrays.stream(currentRowWords).forEach(word -> {
@@ -58,13 +60,31 @@ public class Main {
         writer.close();
     }
 
-    private static void initiateScanner(String path) throws FileNotFoundException {
-        scanner = new Scanner(new FileInputStream(path));
+    @SuppressWarnings("ConstantConditions")
+    private static void initiateScanner(String fileName) throws FileNotFoundException {
+        File[] allRootFiles = getApplicationRootFile().listFiles();
+        for (File currentRootFile : allRootFiles) {
+            String currentFileName = currentRootFile.getName().split("\\.")[0];
+            if (currentFileName.equals(fileName) || currentRootFile.getName().equals(fileName)) {
+                if (!fileName.contains(".txt")){
+                    fileName = fileName.concat(".txt");
+                }
+                scanner = new Scanner(new FileInputStream(currentRootFile.getPath()));
+                break;
+            }
+        }
+
     }
 
-    private static void initiateWriter(String path) throws IOException {
-        writer = new FileWriter(path);
+    @SuppressWarnings({"ConstantConditions"})
+    private static File getApplicationRootFile() {
+        URL url = Main.class.getResource(".");
+        String path = url.getPath();
+        return new File(path);
     }
 
+    private static void initiateWriter() throws IOException {
+        writer = new FileWriter("C:\\Modis_Java_Academy\\Homeworks\\SecondTopic\\src\\wordCounting\\result.txt");
+    }
 
 }
