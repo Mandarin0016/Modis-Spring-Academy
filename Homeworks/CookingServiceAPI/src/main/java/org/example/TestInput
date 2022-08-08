@@ -1,0 +1,62 @@
+Register Admin Viktor Aleksandrov viktorostrov07@gmail.com Mandarin20 manDa123! male
+Login Mandarin20 manDa123!
+ChangeFirstName Ivanka
+ChangeLastName Ivanova
+ChangeGender
+ChangePassword ivankA123!
+Register HomeCook Ivan Ivanov testmail1@gmail.com Ivo1 Ivo123!qwe male
+Register Admin Ivan Ivanov testmail2@gmail.com Ivo2 Ivo124!qwe male
+ADMViewAllUsers
+ADMChangeUserFirstName Ivo1 Pesho
+ADMChangeUserLastName Ivo1 Testov
+ADMChangeUserGender Ivo1
+ADMChangeUserRole Ivo1 ADMIN
+ADMChangeUserStatus Ivo1 CHANGE_PASSWORD
+Logout
+Login Ivo2 Ivo124!qwe
+Info
+ADMAddCategory Tasty Pastas;pasta,water,pecorino
+AddRecipe Pasta Alla Gricia;1000;This is a bloody cool pasta recipe!;35;tagliatelle water pecorino guanciale;https://www.google.com;italia,pecorino,pasta,tagliatelle;I can’t imagine if I can’t feel the taste of that delicious Italian pasta, don’t miss the chance to get some Alla Gracia from the nearest supermarket and don’t forget to buy extra garlic, that's what makes the pasta incredible.
+EditRecipeDescription 1000 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+ADMAddCategory Ultra Pastas;pasta,pasta,pasta
+ADMAddCategory Better Pastas;pasta,beef,chicken
+EditRecipeTitle 1000 Better Pasta Recipe
+EditRecipeCategory 1000 1002
+EditRecipeShortDescription 1000 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+EditRecipeCookingTime 1000 25
+EditRecipeUsedProducts 1000 apple, orange, plum and whatever you have in your fruit garden
+EditRecipePictureURL 1000 https://www.myPastaWorld.com
+EditRecipeTags 1000 pasta, italian, fruits, apples
+BrowseMyRecipes
+BrowseRecipeById 1000
+BrowseRecipeByTitle Better Pasta Recipe
+AddRecipe Fruit Pasta;1000;This is a bloody cool pasta recipe!;15;water pecorino fruits;https://www.yahooo.com;italia,pecorino,pasta,tagliatelle;
+ADMBrowseUserAllRecipes 1002
+DeleteRecipe 1000
+BrowseRecipeByShortDescription This is a bloody cool pasta recipe!
+BrowseRecipeByTags pecorino
+BrowseRecipeBetween 10 1000
+ADMAddCategory Tasty Category;ice cream,milk,apple
+AddRecipe Tasty Cherry IceCream;1003;This is a bloody cool iceCream recipe!;15;milk ice apples water and maybe a bit of a chocolate;https://www.yahooo.com;italia,cream,milk,fruits;
+AddRecipe Tasty Apple IceCream;1003;This is a bloody cool iceCream recipe!;15;milk ice apples water and maybe a bit of a chocolate;https://www.yahooo.com;italia,cream,milk,fruits;
+ADMEditCategoryName 1003 Ice Cream Factory
+ADMEditCategoryDescription 1003 This is an ice cream factory, a lot of lovely and tasty ice-creams can be found here
+ADMEditCategoryTags 1003 milk,cream,apples,cherry,fruits,fresh,cool
+BrowseRecipeByTags milk
+Register HomeCook Dillan Mendel dilanBox@gmail.com DiTheSmurf10 myP@ssw0rd male
+Register HomeCook Merry Christoph testmail22@gmail.com Merry102030 Merr!0123 female
+Login Merry102030 Merr!0123
+AddFavouriteRecipe 1002
+AddFavouriteRecipe 1001
+GetMyFavouriteRecipes
+RemoveFavouriteRecipe 1002
+AddFavouriteCook 1005
+RemoveFavouriteCook 1005
+RemoveFavouriteCook 1004
+GetMyFavouriteCooks
+Login Ivo2 Ivo124!qwe
+ADMShowMyCategories
+ADMChangeUserStatus Merry102030 SUSPENDED
+Login Merry102030 Merr!0123
+GetMyFavouriteRecipes
+End

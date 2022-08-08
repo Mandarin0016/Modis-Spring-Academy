@@ -1,0 +1,43 @@
+package org.example.common;
+
+public final class ExceptionMessages {
+    public static final String INVALID_INPUT = "That is not a valid input.";
+    public static final String NAME_DOES_NOT_MATCH_REQUIREMENTS = "Name must be 2 - 15 characters long.";
+    public static final String EMAIL_ADDRESS_DOES_NOT_MATCH_REQUIREMENTS = "Provided email address does not match the requirements.";
+    public static final String PASSWORD_DOES_NOT_MATCH_REQUIREMENTS = "Password must meet complexity requirements." + OutputMessages.PASSWORD_COMPLEXITY_REQUIREMENTS;
+    public static final String USERNAME_DOES_NOT_MATCH_REQUIREMENTS = "Username must be 2 - 15 characters long word characters only.";
+    public static final String INVALID_GENDER_INPUT = "This is invalid gender input. It must be either \"Male\" or \"Female\"";
+    public static final String RECIPE_TITLE_DOES_NOT_MATCH_REQUIREMENTS = "Recipe title must be 2 - 120 characters long.";
+    public static final String RECIPE_SHORT_DESCRIPTION_DOES_NOT_MATCH_REQUIREMENTS = "Recipe short description must be 2 - 250 characters long.";
+    public static final String RECIPE_USED_PRODUCTS_DOES_NOT_MATCH_REQUIREMENTS = "Recipe used products must be 20 - 500 characters long.";
+    public static final String INVALID_URL = "That is not a valid URL.";
+    public static final String RECIPE_DESCRIPTION_DOES_NOT_MATCH_REQUIREMENTS = "Recipe description must be 150 - 2500 characters long.";
+    public static final String CATEGORY_NAME_DOES_NOT_MATCH_REQUIREMENTS = "Category name must be 2 - 120 characters long.";
+    public static final String CATEGORY_DESCRIPTION_DOES_NOT_MATCH_REQUIREMENTS = "Category description must be 10 - 500 characters long.";
+    public static final String REGISTRATION_INVALID_ROLE = "Role \"%s\" is invalid or cannot be assumed";
+    public static final String REGISTRATION_EXISTING_EMAIL_ADDRESS = "Already exists an account registered with this email address";
+    public static final String REGISTRATION_EXISTING_USERNAME = "Already exists an account registered with this username";
+    public static final String LOGIN_USERNAME_NOT_FOUND = "Username not found";
+    public static final String LOGIN_INCORRECT_PASSWORD = "Incorrect password!";
+    public static final String CANT_LOGOUT = "Ooops! You can't logout, because you are currently not logged in with any account.";
+    public static final String INVALID_OPERATION = "Invalid operation!";
+    public static final String NOT_LOGGED_IN = String.format("%s You need to login first.", INVALID_OPERATION);
+    public static final String THERE_IS_NO_SUCH_USER = "No such user exists.";
+    public static final String THERE_IS_NO_SUCH_CATEGORY = "No such category exists.";
+    public static final String THERE_IS_NO_SUCH_RECIPE = "No such recipe exists.";
+    public static final String CANT_PERFORM_THIS_OPERATION_NOT_ADMIN = "Cannot perform this operation, you are not Admin!";
+    public static final String ALREADY_OWN_THIS_ROLE = "The user with ID - %s already got Role - %s, no need to change.";
+    public static final String ALREADY_OWN_THIS_STATUS = "The user with ID - %s already got Account status - %s, no need to change.";
+    public static final String NO_REGISTERED_USERS_IN_THE_SYSTEM = "There are no registered users in the user repository.";
+    public static final String YOU_CANT_USE_YOUR_ACCOUNT_NOW = "You can't use your account right now. Account with username - %s was %s";
+    public static final String RECIPE_DOES_NOT_BELONGS_TO_USER = "You can't edit or delete recipe that does not belongs to you.";
+    public static final String ZERO_RECIPES = "You don't own your recipes.";
+    public static final String USER_HAS_NO_RECIPES = "This user has no recipes";
+    public static final String NO_REGISTERED_CATEGORIES_IN_THE_SYSTEM = "There are no registered categories in the category repository.";
+    public static final String ADMINISTRATORS_DOES_NOT_HAVE_FAVOURITE_SECTION = "Sorry, you are administrator, you don't have favorite section to do that!";
+    public static final String CANT_ADMIN_AS_FAVOURITE = "Sorry, this user you are pointing to is an ADMIN, you can't add/remove admins to/from your favourite Collection!";
+    public static final String NO_FAVOURITE_RECIPES_SAVED = "It seems like you don't have favourite recipes yet...";
+    public static final String NO_FAVOURITE_COOKS_SAVED = "It seems like you don't have favourite cooks yet...";
+    public static final String THE_USER_IS_NOT_PART_OF_FAVOURITE_COLLECTION = "This user is not part of your favourite collection.";
+    public static final String THE_RECIPE_IS_NOT_PART_OF_FAVOURITE_COLLECTION = "This recipe is not part of your favourite collection.";
+}
