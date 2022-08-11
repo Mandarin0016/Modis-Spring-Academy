@@ -1,0 +1,104 @@
+Account was successfully created! Welcome Mandarin20 your ID is 1000.
+User currently logged in -> Username: Mandarin20 | Email Address: viktorostrov07@gmail.com
+You successfully changed your first name to Ivanka
+You successfully changed your last name to Ivanova
+Done! Now your gender info is showing: FEMALE
+The password was successfully changed for account: Mandarin20
+Account was successfully created! Welcome Ivo1 your ID is 1001.
+Account was successfully created! Welcome Ivo2 your ID is 1002.
+------------1-------------
+User ID = 1000
+FirstName = Ivanka, LastName = Ivanova
+Email = viktorostrov07@gmail.com
+UserName = Mandarin20
+Gender = FEMALE
+Role = ADMIN
+Recipes = 0 added recipes
+Account created on = 2022-08-04 19:17:42
+Last modified = 2022-08-04 19:17:42
+------------2-------------
+User ID = 1001
+FirstName = Ivan, LastName = Ivanov
+Email = testmail1@gmail.com
+UserName = Ivo1
+Gender = MALE
+Role = HOME_COOK
+Recipes = 0 added recipes
+Account created on = 2022-08-04 19:17:42
+Last modified = 2022-08-04 19:17:42
+------------3-------------
+User ID = 1002
+FirstName = Ivan, LastName = Ivanov
+Email = testmail2@gmail.com
+UserName = Ivo2
+Gender = MALE
+Role = ADMIN
+Recipes = 0 added recipes
+Account created on = 2022-08-04 19:17:42
+Last modified = 2022-08-04 19:17:42
+Admin Mandarin20 successfully changed first name for user Ivo1. New first name value: Pesho
+Admin Mandarin20 successfully changed last name for user Ivo1. New last name value: Testov
+Admin Mandarin20 successfully changed gender for user Ivo1. New gender value: FEMALE
+Admin Mandarin20 successfully changed role for user Ivo1. New role value: ADMIN
+Admin Mandarin20 successfully changed account status for user Ivo1. New account value: CHANGE_PASSWORD
+Successfully logged out.
+User currently logged in -> Username: Ivo2 | Email Address: testmail2@gmail.com
+User ID = 1002
+FirstName = Ivan, LastName = Ivanov
+Email = testmail2@gmail.com
+UserName = Ivo2
+Gender = MALE
+Role = ADMIN
+Recipes = 0 added recipes
+Account created on = 2022-08-04 19:17:42
+Last modified = 2022-08-04 19:17:42
+Category with id '1000' was successfully created.
+A new recipe was successfully added by Ivo2. The recipe title is Pasta Alla Gricia.
+Ivo2 successfully changed description for recipe Pasta Alla Gricia
+Category with id '1001' was successfully created.
+Category with id '1002' was successfully created.
+Ivo2 successfully changed title for recipe Better Pasta Recipe
+Ivo2 successfully changed category for recipe Better Pasta Recipe
+Ivo2 successfully changed short description for recipe Better Pasta Recipe
+Ivo2 successfully changed cooking time for recipe Better Pasta Recipe
+Ivo2 successfully changed used products for recipe Better Pasta Recipe
+Ivo2 successfully changed picture URL for recipe Better Pasta Recipe
+Ivo2 successfully changed tags for recipe Better Pasta Recipe
+Recipe title: Better Pasta Recipe; Recipe ID: 1000
+Recipe found - {ID=1000, category ID=1002, title='Better Pasta Recipe', author username=Ivo2, shortDescription='Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin', cookingTime=25, usedProducts='apple, orange, plum and whatever you have in your fruit garden', pictureURL=https://www.myPastaWorld.com, description='Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.', tags=[pasta, italian, fruits, apples], created='2022-08-04 19:17:42', modified='2022-08-04 19:17:42'}
+Better Pasta Recipe with ID: 1000 by Ivo2
+A new recipe was successfully added by Ivo2. The recipe title is Fruit Pasta.
+Recipe title: Better Pasta Recipe; Recipe ID: 1000
+Recipe title: Fruit Pasta; Recipe ID: 1001
+Ivo2 successfully deleted Better Pasta Recipe
+Fruit Pasta with ID: 1001 by Ivo2
+Fruit Pasta with ID: 1001 by Ivo2
+Fruit Pasta with ID: 1001 by Ivo2
+Category with id '1003' was successfully created.
+A new recipe was successfully added by Ivo2. The recipe title is Tasty Cherry IceCream.
+A new recipe was successfully added by Ivo2. The recipe title is Tasty Apple IceCream.
+Ivo2 successfully changed name for category Ice Cream Factory
+Ivo2 successfully changed description for category Ice Cream Factory
+Ivo2 successfully changed tags for category Ice Cream Factory
+Tasty Cherry IceCream with ID: 1002 by Ivo2
+Tasty Apple IceCream with ID: 1003 by Ivo2
+Account was successfully created! Welcome DiTheSmurf10 your ID is 1004.
+Account was successfully created! Welcome Merry102030 your ID is 1005.
+User currently logged in -> Username: Merry102030 | Email Address: testmail22@gmail.com
+Merry102030 successfully saved recipe 1002 in favourite.
+Merry102030 successfully saved recipe 1001 in favourite.
+Recipe: Tasty Cherry IceCream id(1002)
+Recipe: Fruit Pasta id(1001)
+Merry102030 successfully removed recipe 1002 from favourite.
+Merry102030 successfully saved home cook 1005 in favourite.
+Merry102030 successfully removed home cook 1005 from favourite.
+This recipe is not part of your favourite collection.
+It seems like you don't have favourite cooks yet...
+User currently logged in -> Username: Ivo2 | Email Address: testmail2@gmail.com
+Category name: Tasty Pastas Category ID: 1000
+Category name: Ultra Pastas Category ID: 1001
+Category name: Better Pastas Category ID: 1002
+Category name: Ice Cream Factory Category ID: 1003
+Admin Ivo2 successfully changed account status for user Merry102030. New account value: SUSPENDED
+User currently logged in -> Username: Merry102030 | Email Address: testmail22@gmail.com
+You can't use your account right now. Account with username - Merry102030 was SUSPENDED
