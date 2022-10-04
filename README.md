@@ -40,7 +40,7 @@ spring.datasource.password: {password}
   article to configure the SMTP server
   from [here](https://support.google.com/a/answer/176600?hl=en#:~:text=Set%20up%20the%20app%20or,re%20using%20TLS%2C%20enter%20587.)
   and a useful GeeksforGeeks article from [here](https://www.geeksforgeeks.org/spring-boot-sending-email-via-smtp/).
-  Once the SMTP communication setup is finished, place your mail application credentials in ```application.yaml```:
+  Once the SMTP communication setup finished, place your mail application credentials in ```application.yaml```:
 
 ```yaml
 environments.mail-properties.test.username: { LDAP_address }
